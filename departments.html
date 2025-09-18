@@ -1,1 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Departments & Fees</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
 
+        h2 {
+            text-align: center;
+            color: #004d99;
+            margin-bottom: 20px;
+        }
+
+        .fees-table-container {
+            max-width: 800px;
+            margin: auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        th, td {
+            text-align: left;
+            padding: 12px 15px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #003366;
+            color: white;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tr:hover {
+            background-color: #e9e9e9;
+            cursor: pointer;
+        }
+
+        .note {
+            text-align: center;
+            font-size: 0.9em;
+            color: #666;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="fees-table-container">
+    <h2>Departments and Yearly Fees</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Department</th>
+                <th>Course Offered</th>
+                <th>Yearly Fee (Approx.)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Science</td>
+                <td>B.Sc. (Computer Science)</td>
+                <td>₹ 35,000</td>
+            </tr>
+            <tr>
+                <td>Science</td>
+                <td>B.Sc. (Mathematics)</td>
+                <td>₹ 30,000</td>
+            </tr>
+            <tr>
+                <td>Commerce</td>
+                <td>B.Com. (General)</td>
+                <td>₹ 25,000</td>
+            </tr>
+            <tr>
+                <td>Commerce</td>
+                <td>B.Com. (Computers)</td>
+                <td>₹ 28,000</td>
+            </tr>
+            <tr>
+                <td>Arts</td>
+                <td>B.A. (History, Economics, Political Science)</td>
+                <td>₹ 20,000</td>
+            </tr>
+            <tr>
+                <td>Management</td>
+                <td>BBA (Bachelor of Business Administration)</td>
+                <td>₹ 40,000</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="note">
+        *Fees are approximate and subject to change. They do not include examination fees or other miscellaneous charges.
+    </div>
+</div>
+
+</body>
+</html>
