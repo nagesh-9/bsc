@@ -1,1 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sri Deepthi Mahila Degree College</title>
+    <style>
+        /* General Body and Page Layout */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
 
+        /* Header Section */
+        .header {
+            background-color: #004d99;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        /* Navigation Bar */
+        .navbar {
+            background-color: #003366;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .navbar a {
+            display: inline-block;
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-size: 1.1em;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .navbar a:hover {
+            background-color: #002244;
+        }
+
+        /* Main Content and Page Sections */
+        .content {
+            padding: 20px;
+            max-width: 900px;
+            margin: 20px auto;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .page-section {
+            display: none; /* Hide all sections by default */
+        }
+
+        .page-section.active {
+            display: block; /* Show the active section */
+        }
+
+        h2 {
+            color: #004d99;
+            border-bottom: 2px solid #004d99;
+            padding-bottom: 5px;
+        }
+
+        /* Specific Styling for Departments */
+        .department-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .department-list li {
+            background-color: #f0f8ff;
+            border-left: 4px solid #004d99;
+            margin-bottom: 10px;
+            padding: 15px;
+            font-size: 1.1em;
+        }
+        
+        /* Specific Styling for Contact Page */
+        .contact-info p {
+            margin-bottom: 10px;
+        }
+        
+        .contact-form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        
+        .contact-form input, .contact-form textarea {
+            width: 98%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        
+        .contact-form button {
+            background-color: #004d99;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background-color 0.3s;
+        }
+        
+        .contact-form button:hover {
+            background-color: #003366;
+        }
+
+        /* Footer Section */
+        .footer {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            position: relative; /* Use relative to not stick to bottom of screen */
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1>Sri Deepthi Mahila Degree College</h1>
+    <p>Empowering women through education</p>
+</div>
+
+<div class="navbar">
+    <a onclick="showPage('home')">Home</a>
+    <a onclick="showPage('departments')">Departments</a>
+    <a onclick="showPage('contact')">Contact Us</a>
+</div>
+
+<div class="content">
+
+    <div id="home" class="page-section active">
+        <h2>Welcome to Our College</h2>
+        <p>Sri Deepthi Mahila Degree College is dedicated to providing quality education for women, fostering an environment of academic excellence, personal growth, and leadership. Our institution is committed to shaping the future of young women and empowering them to achieve their full potential.</p>
+        <p>Explore our website to learn more about our academic programs, faculty, and the vibrant campus life we offer.</p>
+        <p>Established with the vision of promoting female literacy and empowerment, our college has grown into a beacon of knowledge and opportunity. 
+
+[Image of university campus]
+</p>
+    </div>
+
+    <div id="departments" class="page-section">
+        <h2>Our Academic Departments</h2>
+        <p>We offer a diverse range of undergraduate programs designed to meet the academic and career aspirations of our students.</p>
+        <ul class="department-list">
+            <li>Department of Science (B.Sc.) - Offers courses in Physics, Chemistry, Mathematics, and Biology.</li>
+            <li>Department of Commerce (B.Com) - Specializations include General, Computers, and Honors.</li>
+            <li>Department of Arts (B.A.) - Programs in History, Economics, Political Science, and more.</li>
+            <li>Department of Computer Applications (BCA) - A comprehensive program focusing on software development and IT.</li>
+        </ul>
+        <p>Each department is led by experienced faculty members and provides a modern curriculum to prepare students for their future careers.</p>
+    </div>
+
+    <div id="contact" class="page-section">
+        <h2>Contact Us</h2>
+        <div class="contact-info">
+            <p><strong>Address:</strong> [Your College Address Here], [City], [State], [Pincode]</p>
+            <p><strong>Phone:</strong> +91 [Your Phone Number Here]</p>
+            <p><strong>Email:</strong> info@[your-college-domain].com</p>
+        </div>
+    
+        <div class="contact-form">
+            <h3>Send us a Message</h3>
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+    
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+    
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    &copy; 2025 Sri Deepthi Mahila Degree College. All Rights Reserved.
+</div>
+
+<script>
+    function showPage(pageId) {
+        // Get all page sections
+        const pages = document.querySelectorAll('.page-section');
+        // Loop through and hide all of them
+        pages.forEach(page => {
+            page.classList.remove('active');
+        });
+        // Show the selected page by adding the 'active' class
+        document.getElementById(pageId).classList.add('active');
+    }
+
+    // Optional: Hide the contact form submission alert
+    document.querySelector('.contact-form form').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevents the form from actually submitting
+        alert('Thank you for your message! This is a demo form.');
+        this.reset(); // Resets the form fields
+    });
+</script>
+
+</body>
+</html>
