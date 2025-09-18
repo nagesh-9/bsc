@@ -3,117 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Departments & Fees</title>
+    <title>Departments - Sri Deepthi Mahila Degree College</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
-            padding: 20px;
+            padding: 0;
             background-color: #f4f4f4;
             color: #333;
         }
-
-        h2 {
+        .header {
+            background-color: #004d99;
+            color: white;
+            padding: 20px;
             text-align: center;
-            color: #004d99;
-            margin-bottom: 20px;
         }
-
-        .fees-table-container {
+        .header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        .navbar {
+            background-color: #003366;
+            overflow: hidden;
+            text-align: center;
+        }
+        .navbar a {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-size: 1.1em;
+        }
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .content {
+            padding: 20px;
             max-width: 800px;
             margin: auto;
             background-color: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            margin-top: 20px;
         }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 20px 0;
-        }
-
-        th, td {
-            text-align: left;
-            padding: 12px 15px;
-            border-bottom: 1px solid #ddd;
-        }
-
-        th {
+        .footer {
             background-color: #003366;
             color: white;
-            font-weight: bold;
-            text-transform: uppercase;
-        }
-
-        tr:nth-child(even) {
-            background-color: #f2f2f2;
-        }
-
-        tr:hover {
-            background-color: #e9e9e9;
-            cursor: pointer;
-        }
-
-        .note {
             text-align: center;
-            font-size: 0.9em;
-            color: #666;
-            margin-top: 20px;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .department-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .department-list li {
+            background-color: #e9e9e9;
+            margin-bottom: 10px;
+            padding: 15px;
+            border-left: 5px solid #004d99;
+            font-size: 1.1em;
         }
     </style>
 </head>
 <body>
 
-<div class="fees-table-container">
-    <h2>Departments and Yearly Fees</h2>
+<div class="header">
+    <h1>Sri Deepthi Mahila Degree College</h1>
+    <p>Empowering women through education</p>
+</div>
 
-    <table>
-        <thead>
-            <tr>
-                <th>Department</th>
-                <th>Course Offered</th>
-                <th>Yearly Fee (Approx.)</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Science</td>
-                <td>B.Sc. (Computer Science)</td>
-                <td>₹ 35,000</td>
-            </tr>
-            <tr>
-                <td>Science</td>
-                <td>B.Sc. (Mathematics)</td>
-                <td>₹ 30,000</td>
-            </tr>
-            <tr>
-                <td>Commerce</td>
-                <td>B.Com. (General)</td>
-                <td>₹ 25,000</td>
-            </tr>
-            <tr>
-                <td>Commerce</td>
-                <td>B.Com. (Computers)</td>
-                <td>₹ 28,000</td>
-            </tr>
-            <tr>
-                <td>Arts</td>
-                <td>B.A. (History, Economics, Political Science)</td>
-                <td>₹ 20,000</td>
-            </tr>
-            <tr>
-                <td>Management</td>
-                <td>BBA (Bachelor of Business Administration)</td>
-                <td>₹ 40,000</td>
-            </tr>
-        </tbody>
-    </table>
+<div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="departments.html">Departments</a>
+    <a href="contact.html">Contact Us</a>
+</div>
 
-    <div class="note">
-        *Fees are approximate and subject to change. They do not include examination fees or other miscellaneous charges.
-    </div>
+<div class="content">
+    <h2>Our Academic Departments</h2>
+    <ul class="department-list">
+        <li>Department of Science (B.Sc.)</li>
+        <li>Department of Commerce (B.Com)</li>
+        <li>Department of Arts (B.A.)</li>
+        <li>Department of Computer Applications (BCA)</li>
+    </ul>
+    <p>Each department is led by experienced faculty members and offers a comprehensive curriculum designed to prepare students for their future careers.</p>
+</div>
+
+<div class="footer">
+    &copy; 2024 Sri Deepthi Mahila Degree College. All Rights Reserved.
 </div>
 
 </body>
